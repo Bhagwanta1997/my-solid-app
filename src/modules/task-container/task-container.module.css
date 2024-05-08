@@ -1,0 +1,52 @@
+
+.tasks_container {
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+span {
+    text-transform: capitalize;
+    max-width: 140px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.delete_button {
+    background-color: red;
+    color: white;
+}
+
+ul {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    max-width: 60vh;
+    min-width: 60vw;
+    overflow: auto;
+
+    li {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+        padding: 10px;
+        min-width: 150px;
+        cursor: pointer;
+
+        button {
+            background-color: rgb(43, 146, 236);
+            height: 30px;
+            border: 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}
